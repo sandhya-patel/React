@@ -1,24 +1,38 @@
-import logo from './logo.svg';
+import  DogCard from './DogCard.js';
+
+
+
 import './App.css';
+import Counter from './Counter.js';
 
 function App() {
   return (
+    <>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div  style = {
+      {
+        display : "flex"
+      }
+    }>
+      <div>
+  
+        <DogCard name= "lotuse" Image="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg"/>
+        </div>
+        <div>
+        <DogCard name= "rose" Image="https://img.freepik.com/free-photo/vibrant-colors-nature-close-up-wet-purple-daisy-generated-by-artificial-intellingence_25030-63819.jpg"/>
+       
+        </div>
+        <br/>
+        <hr/>
+      
+      
     </div>
+    </div>
+
+    <br/>
+    <Counter/>
+    </>
   );
 }
 
